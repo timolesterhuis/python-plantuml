@@ -24,5 +24,8 @@ setup(
         'Topic :: Software Development :: Libraries :: Python Modules',
     ],
     install_requires=['httplib2'],
-    keywords=['plantuml', 'uml']
+    keywords=['plantuml', 'uml'],
+    entry_points = {
+        'console_scripts': ['plantuml=plantuml.main'],
+    }
 )
